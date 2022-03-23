@@ -1,5 +1,5 @@
 title:               My digital garden
-include:             ['_pages']
+include:             ['_pages']['_notes']
 exclude:             ['_includes/notes_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
@@ -12,15 +12,15 @@ use_html_extension:  false
 
 # Set to `true` to open non-internal links in new tabs, or
 # set to `false` to open non-internal links in current tab.
-open_external_links_in_new_tab: true
+open_external_links_in_new_tab: False
 
 # Set to `true` to replace tweet URLs with Twitter embeds.
 # Note that doing so will negatively the reader's privacy
 # as their browser will communicate with Twitter's servers.
-embed_tweets: false
+embed_tweets: true
 
 permalink:           pretty
-relative_permalinks: false
+relative_permalinks: trur
 
 plugins:
   - jekyll-last-modified-at
@@ -30,7 +30,7 @@ sass:
   style:            :compressed
 
 collections:
-  notes:
+  notes: _notes
     output: true
     permalink: /:slug
 
