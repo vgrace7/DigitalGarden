@@ -24,7 +24,6 @@ relative_permalinks: true
 
 plugins:
   - jekyll-last-modified-at
-  - bidirectional_links_generator.rb
 
 sass:
   sass_dir:          _sass
